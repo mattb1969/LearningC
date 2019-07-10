@@ -1,6 +1,11 @@
 /*!*********************************************************************
  *
  * Validation of the pointer functionality
+ * 
+ * In this example, the function uses pointers and an int for the size to 
+ * perform the calculations on.
+ * 
+ * This has the drawback that the size is fixed and can't be dynamically allocated
  *
  */
 
