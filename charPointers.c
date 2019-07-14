@@ -1,78 +1,60 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   charPointers.c
- * Author: Matthew Bennett <matthew.bennett@bostintechnology.com>
+/*!*********************************************************************
  *
- * Created on 28 April 2019, 10:18
+ * Validation of the pointer functionality
+ * 
+ * In this example, the function uses char pointers and an int for the size to 
+ * perform the text merge on.
+ * 
+ * This has the drawback that the size is fixed and can't be dynamically allocated
+ *
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
 
-//TODO: need to move this to my learning git repository, rather than here
+/*!*********************************************************************
+ *
+ * Function filles the output char array with the input char to completely fill it
+ * putting the answer in the output array
+ */ 
 
-char *readVersion(int conn) {
-    
-    int            number;
-    static char           answer[100];
-    answer[0] = '\0';
-    printf("reading version\n");
-    
-    printf("about to get a number\n");
-    number = rand();
-    printf("Got a number:%d\n", number);
-    sprintf(answer, "c IDE MTRW EM400X/MC200 (MTRW_LP  V%d) DD/MM/YY) Copyright IB Technology Ltd", number);
-    printf("answer is: >>%s<<\n", answer);
+int arrayFill(char input_char, char *output_char, int times) {
+    printf("In array fill function\n");
 
-    //strcpy(answer,"\0"); Use this to check for zero length
-    
-    return answer;
-}
+    int i;
 
-void get_version_info(void) {
-
-    char            version[100] = "\0";
-    //char            *version = "\0";
-    int             status = 1;
-    int             count = 0;
-    int             connection;
-    
-    connection = 13;
-    do {
-        strcpy(version,readVersion(connection));
-
-        // check length of version
-        //
-        printf("size of Version: %d\n", sizeof(version)/sizeof(version[0]));        // returns 100
-        printf("Version Information: >>%s<<\n", version);
-        
-// Version is empty - not returned!!        
-        
-        count ++;
-    } while  ((count < 5) & (status != 0));
-    
-    if (status == 0) {
-        printf("status is zero\n");
-
+    for (i=0; i < times; i++)
+    {
+        output_char[i] = input_char;
     }
-    
-    return;
+
+	// Add some extra bits to check string length
+    strcat(output_char,"e");
+    strcat(output_char,"d");
+    return 0;
 }
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
-	printf("starting the test program\n");
-	get_version_info();
+int main (void) {
+    printf("Starting main function\n");
+
+    int list_size = 5;
+    int returncode;
+	char answer_list[] =  "aaaaa";
+
+    printf("List before Calculation\n");
+	printf("%s\n", answer_list);
 	
-	return (EXIT_SUCCESS);
-}
+    /* There is no need to pass in pointers for the number and answer list
+     * because as they are both arrays, they are already pointers
+     * */
+    returncode = arrayFill('b', answer_list, list_size);
 
+    printf("Return Code:%d", returncode);
+
+    printf("\nList AFTER Calculation\n");
+	printf("%s\n", answer_list);
+
+    return 0;
+}

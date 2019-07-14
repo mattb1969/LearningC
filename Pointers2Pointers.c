@@ -7,21 +7,6 @@
  * 
  */
 
-
-/*
- * void increase(int** data)
- * {
- *     *data = realloc(*data, 5 * sizeof int);
- * }
- * Calling code would then look like:
- * 
- * int *data = malloc(4 * sizeof *data);
- * // do stuff with data 
- * increase(&data);
- * // more stuff
- * free(data);
- */
-
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -33,30 +18,55 @@
  * of the output elements based on size_adjust
  */ 
 
-int Calculation(int input, int** output, int size_adjust) {
+int Calculation(int input, int size_adjust, int** output, int *element) 
+{
     printf("In Calculation function\n");
 
     int i;
+	int *temp = malloc (sizeof(int));										// <<- Key line
 
 	for (i=0; i < size_adjust; i++)
-    {
-
-//		printf("Resizing output memory allocation to: %d\n", (i+1) * sizeof(int));
-//		*output = (int*)realloc(*output, (i+1) * sizeof(int));
-		
-		printf("Setting value of output[%d] to %d\n", i, input+(i*3));
-		//(*output) dereferences it before use, thus allowing the variable to be set and not the pointer!!
-        (*output)[i] = input+(i*3);
-		
+    {	
 		// Resize to make it bigger by 1 more than used
 		printf("Resizing output memory allocation to: %d\n", (i+1) * sizeof(int));
-		*output = (int*)realloc(*output, (i+1) * sizeof(int));
+		*output = (int*)realloc(temp, (i+1) * sizeof(int));
+
+		printf("Setting value of output[%d] to %d\n", i, input+(i*3));
+		temp[i] = input+(i*3);
 		
-		printf("Number of elements:%d\n\n", i);
     }
 	// Set the final element to \0 to identify the end
-	(*output)[i] = '\0';
+	// The (*output) deferences the pointer so that the element can be accessed.
+	//(*output)[i] = '\0';
+	printf("Number of elements:%d\n\n", i);
+	*element = i;
+	
+    return 0;
+}
 
+int ArrayFill(char input, int size_adjust, char** output, int *element) 
+{
+    printf("In Merge function\n");
+
+    int i = 0;
+	char *temp = malloc (sizeof(char));										// <<- Key line
+
+	while (i < size_adjust)
+    {	
+		// Resize to make it bigger by 1 more than used
+		printf("Resizing output memory allocation to: %d\n", (i+1) * sizeof(char));
+		*output = (char*)realloc(temp, (i+1) * sizeof(char));
+
+		printf("Setting value of output[%d] to %c\n", i, input);
+		temp[i] = input;
+		i++;
+		
+    }
+	// Set the final element to \0 to identify the end
+	temp[i] = '\0';
+	printf("Number of elements:%d\n\n", i);
+	*element = i;
+	
     return 0;
 }
 
@@ -65,6 +75,7 @@ int main (void) {
 	
 	int j = 0;
     int *result = malloc (sizeof(int*));
+	int *last_element = malloc (sizeof(int*));
 	result[0] = '\0';
 	
     printf("List before Calculation\n");
@@ -75,7 +86,7 @@ int main (void) {
     }
 	printf(".\n");
 
-    Calculation(26, &result, 5);
+    Calculation(26, 5, &result, last_element);
 
     printf("List AFTER Calculation\n");
 	j=0;
@@ -85,6 +96,26 @@ int main (void) {
         printf("%d : %d\n", j, result[j]);
 		j++;
     }
+	printf("Last Element of Output:%d\n", *last_element);
+	
+	//-----------------------------------------------------------------//
+	
+	char *arr_fill = malloc (sizeof(char*));
+	int *last_arr_element = malloc (sizeof(char*));
+	
+			
+	ArrayFill('w', 7, &arr_fill, last_arr_element);
+	
+    printf("List AFTER Array Fill\n");
+	j=0;
 
+    while (arr_fill[j] != '\0')
+    {
+        printf("%d : %c\n", j, arr_fill[j]);
+		j++;
+    }
+	printf("Full Array:%s\n", arr_fill);
+	printf("Last Element of Output:%d\n", *last_arr_element);	
+	
     return 0;
 }

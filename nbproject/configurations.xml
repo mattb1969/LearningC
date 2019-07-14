@@ -19,12 +19,14 @@
       <in>Pointers2.c</in>
       <in>Pointers2Pointers.c</in>
       <in>SimpleDivision.c</in>
+      <in>charFuncReplys.c</in>
       <in>charPointers.c</in>
       <in>exitingloops.c</in>
       <in>gnu_plot.c</in>
       <in>gnu_plot2.c</in>
       <in>more_on_structures.c</in>
       <in>signalhandling.c</in>
+      <in>stringFunctions.c</in>
       <in>structures.c</in>
       <in>structures2.c</in>
       <in>timetest.c</in>
@@ -96,6 +98,8 @@
       </item>
       <item path="SimpleDivision.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="charFuncReplys.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="charPointers.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="exitingloops.c" ex="false" tool="0" flavor2="0">
@@ -107,6 +111,8 @@
       <item path="more_on_structures.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="signalhandling.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stringFunctions.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="structures.c" ex="false" tool="0" flavor2="0">
       </item>

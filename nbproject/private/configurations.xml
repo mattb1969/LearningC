@@ -19,24 +19,26 @@
       <in>Pointers2.c</in>
       <in>Pointers2Pointers.c</in>
       <in>SimpleDivision.c</in>
+      <in>charFuncReplys.c</in>
       <in>charPointers.c</in>
       <in>exitingloops.c</in>
-      <in>g4g_realloc.c</in>
       <in>gnu_plot.c</in>
       <in>gnu_plot2.c</in>
+      <in>memoryRealloc.c</in>
+      <in>memoryRealloc2.c</in>
       <in>more_on_structures.c</in>
       <in>signalhandling.c</in>
+      <in>stringFunctions.c</in>
       <in>structures.c</in>
       <in>structures2.c</in>
       <in>timetest.c</in>
-      <in>tp_example.c</in>
     </df>
   </logicalFolder>
   <projectmakefile></projectmakefile>
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
-        <developmentServer>pi@192.168.0.100:22</developmentServer>
+        <developmentServer>pi@192.168.0.101:22</developmentServer>
         <platform>2</platform>
       </toolsSet>
       <compile>

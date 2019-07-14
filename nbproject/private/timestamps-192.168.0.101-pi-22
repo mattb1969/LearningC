@@ -1,10 +1,9 @@
-#Sat Jul 13 16:00:24 BST 2019
+#Sun Jul 14 09:27:15 BST 2019
 /users/matthew/documents/raspberry\ pi/learningc/structures2.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/structures.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/hooks/pre-rebase.sample=c1561912178000
 /users/matthew/documents/raspberry\ pi/learningc/.git/hooks/pre-applypatch.sample=c1561912179000
 /users/matthew/documents/raspberry\ pi/learningc/.git/hooks/update.sample=c1561912179000
-/users/matthew/documents/raspberry\ pi/learningc/tp_example.c=c1562574322000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/32/0024519ec66acf2e245a8cecedbf3024c67b84=c1562750201000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/51/02e9785b27ac8c68608954bf5923aea48a5291=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/info/exclude=c1561912178000
@@ -33,13 +32,12 @@
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/ac/547821375910e322487e2c6f35071aef671669=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/logs/refs/remotes/origin/master=c1562750258000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/d8/6692fff2f96d474893c85935c602607f0a7603=c1561912180000
-/users/matthew/documents/raspberry\ pi/learningc/pointers2pointers.c=c1563030021000
+/users/matthew/documents/raspberry\ pi/learningc/pointers2pointers.c=c1563092833000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/3d/3fe3aab0668e1dd2b394f790237f9aca19c755=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/example_1_5_2.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/1d/e492a6d40c2c3d501c6371c878a9747b4e2175=c1562750201000
 /users/matthew/documents/raspberry\ pi/learningc/.git/logs/refs/remotes/origin/head=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/ae/37d42119543f826c9d11d87d712feb8a3c8fe2=c1561912180000
-/users/matthew/documents/raspberry\ pi/learningc/g4g_realloc.c=c1562574322000
 /users/matthew/documents/raspberry\ pi/learningc/example_1_5_1.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/53/a16db3623aa64a56f78d68af9467f55e14c287=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/c0/1db5cbaa01bb935ca1999c61a529b7e5c06be2=c1561912180000
@@ -90,8 +88,8 @@ VERSION=1.3
 /users/matthew/documents/raspberry\ pi/learningc/exercise_1_3.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/a4/5c38d719ac4d786cbe55e10771069c8b277e00=c1562750201000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/6e/ca197dd7b957e1a0b6818d85a5f561bb19585e=c1562750201000
-/users/matthew/documents/raspberry\ pi/learningc/pointers2.c=c1562675101000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/e7/0eab24c85e73e5ac189d1d06b6f8658b123ed4=c1561912180000
+/users/matthew/documents/raspberry\ pi/learningc/pointers2.c=c1562675101000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/a7/ce19f0bf310e361ab0abef194daee4c36c6b4a=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/packed-refs=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/6c/c2127d074d8bc9be0f93c90b425e84b3e5d5ff=c1562750201000
@@ -102,7 +100,7 @@ VERSION=1.3
 /users/matthew/documents/raspberry\ pi/learningc/example_1_5_1b.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/simpledivision.c=c1561912180000
 /users/matthew/documents/raspberry\ pi/learningc/.git/hooks/pre-receive.sample=c1561912179000
-/users/matthew/documents/raspberry\ pi/learningc/charpointers.c=c1562834344000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/cb/6a2770dce643830fcc28475d3dde9a63d29338=c1561912180000
-/users/matthew/documents/raspberry\ pi/learningc/.git/logs/refs/heads/master=c1562750201000
+/users/matthew/documents/raspberry\ pi/learningc/charpointers.c=c1562834344000
 /users/matthew/documents/raspberry\ pi/learningc/.git/objects/b9/6739c3a1f6fd4bdb371478c84fbe18114c791b=c1561912180000
+/users/matthew/documents/raspberry\ pi/learningc/.git/logs/refs/heads/master=c1562750201000
