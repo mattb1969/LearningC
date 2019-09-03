@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="97">
+<configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <in>Example_1_1.c</in>
@@ -24,6 +24,9 @@
       <in>exitingloops.c</in>
       <in>gnu_plot.c</in>
       <in>gnu_plot2.c</in>
+      <in>linkedList.c</in>
+      <in>linkedList.h</in>
+      <in>linkedListMain.c</in>
       <in>memoryRealloc.c</in>
       <in>memoryRealloc2.c</in>
       <in>more_on_structures.c</in>
@@ -38,7 +41,7 @@
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
-        <developmentServer>pi@192.168.0.101:22</developmentServer>
+        <developmentServer>pi@rpitest1:22</developmentServer>
         <platform>2</platform>
       </toolsSet>
       <compile>
