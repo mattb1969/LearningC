@@ -26,7 +26,7 @@
 
 static void calculation(int a, int b)
 {
-    printf("Performing Calculation\n");
+    printf("\nPerforming Calculation\n");
 
     printf("Result:%d\n", (a * b));
     return;
@@ -34,28 +34,42 @@ static void calculation(int a, int b)
 
 static void pointer_calculation(int *x, int *y, int *z)
 {
-    printf("Performing Pointer Calculation\n");
+    printf("\nDoing Pointer Calculation with a array\n");
+
 
     printf("a:%d\n", *x);
     printf("b:%d\n", *y);
-    printf("\nPointer of a:%p\n", &x);
+    printf("Pointer of a:%p\n", &x);
     printf("Pointer of b:%p\n", &y);
     *z = (*x * *y);
     printf("Pointer Calculation:%d\n", *z );
     return;
 }
 
+static void pointer_floater_calculation(float *fx, float *fy, float *fz)
+{
+    printf("\nDoing FLOATING pointer calculation with a array\n");
+
+    printf("a:%f\n", *fx);
+    printf("b:%f\n", *fy);
+    printf("Floating Pointer of a:%p\n", &fx);
+    printf("Floating Pointer of b:%p\n", &fy);
+    *fz = (*fx * *fy);
+    printf("Floating Pointer Calculation:%f\n", *fz );
+    return;
+}
+
 
 static void array_calculation(int *array)
 {
-    printf("Performing Array Calculation\n");
-
-    printf("Value of a:%d\n", *array[0]);
-    printf("Value of b:%d\n", *array[1]);
-    printf("\nPointer of a:%p\n", &array[0]);
+    printf("\nDoing calculation with a pointed to array\n");
+ 
+    printf("Value of a:%d\n", array[0]);
+    printf("Value of b:%d\n", array[1]);
+    printf("Pointer of a:%p\n", &array[0]);
     printf("Pointer of b:%p\n", &array[1]);
-    *array[2] = (*array[0] * *array[1]);
-    printf("Array Calculation:%d\n", *array[2]);
+    array[2] = (array[0] * array[1]);
+    printf("Array Calculation:%d\n", array[2]);
     return;
 }
 
@@ -65,6 +79,10 @@ int main(int argc, char **argv)
 	int a = 3;
     int b = 5;
     int c = 0;
+    
+    float e = 3.4;
+    float f = 6.7;
+    float g = 0.0;
 
     printf("Setting values array\n");
 
@@ -81,18 +99,15 @@ int main(int argc, char **argv)
 
     printf("First Calculation\n");
 
-
     calculation(a,b);
 
     pointer_calculation(&a, &b, &c);
 
-    printf("Doing pointer calculation with a array\n");
-
     pointer_calculation(&values[0], &values[1], &values[2]);
 
-    printf("Doing calculation with a pointed to array\n");
+    pointer_floater_calculation(&e, &f, &g);
 
-    array_calculation(&p_values);
+    array_calculation(p_values);
     
 	return 0;
 }

@@ -24,6 +24,8 @@
       <in>exitingloops.c</in>
       <in>gnu_plot.c</in>
       <in>gnu_plot2.c</in>
+      <in>ioctl_spi_comms.c</in>
+      <in>ioctl_spi_comms.h</in>
       <in>linkedList.c</in>
       <in>linkedList.h</in>
       <in>linkedListMain.c</in>
@@ -35,6 +37,8 @@
       <in>structures.c</in>
       <in>structures2.c</in>
       <in>timetest.c</in>
+      <in>translate_example.c</in>
+      <in>translate_example2.c</in>
     </df>
   </logicalFolder>
   <projectmakefile></projectmakefile>
